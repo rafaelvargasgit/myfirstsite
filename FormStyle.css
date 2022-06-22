@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+body *{
+	box-sizing: border-box ;
+}
+
+.layout-form {
+    width: 100vw;
+    height: 100vh;
+    background-color: #85054B;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    overflow:hidden
+    
+}
+.image{
+    position: absolute;
+        top: -300px;
+        center: 00;
+        width: 1300px;
+
+    }
+ .box{
+            color: deeppink;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: #85054B;
+            padding: 12px;
+            border-radius: 10px;
+            width: 25%;
+            box-shadow: 0 10px 40px -12px #F0AAD0;
+            
+        }
+        fieldset{
+            border: 10px solid black;
+        }
+        legend{
+            border: 5px solid black;
+            padding: 10px;
+            text-align: center;
+            background-color: black;
+            border-radius: 8px;
+            box-shadow: 0 10px 40px -12px #F0AAD0;
+        }
+        .inputBox{
+            position: relative;
+        }
+        .inputUser{
+            background: none;
+            border: none;
+            border-bottom: 3px solid black;
+            outline: none;
+            color: black;
+            font-size: 25px;
+            width: 100%;
+            letter-spacing: 2px;
+        }
+        .labelInput{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+            transition: .5s;
+        }
+        .inputUser:focus ~ .labelInput,
+        .inputUser:valid ~ .labelInput{
+            top: -20px;
+            font-size: 12px;
+            color: deeppink;
+        }
+        
+       .botao-enviar{
+            width: 100%;
+            padding: 25px 70px ;
+            margin: 25px 0;
+            border: 20px;
+            border-radius: 25px;
+            text-transform: uppercase;
+            font-weight: 850;
+            letter-spacing: 4px; 
+            color: deeppink;
+            background-color: black;
+            cursor: pointer;
+            box-shadow: 0 10px 40px -12px #F0AAD0;
+            outline: none;
+        }
+        .botao-enviar:hover{
+            background-color:#85054B
+        }
+        
+}
+@media only screen and (max-width: 950px){
+    .box-login{
+        width:50% ;
+    }
+@media only screen and (max-width: 600px){
+    .layout-login{
+        flex-direction:column;
+}
+    .left-layout >h1{
+        display: none;
+    }
+    .left-layout{
+        width: 75%;
+        height: auto;
+    }
+    .right-login{
+        width: 80%;
+        height: auto;
+    }
+    .left-layout-image{
+        width:40vw 
+    }
+.box-login{
+    width:75%
+}

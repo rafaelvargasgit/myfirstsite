@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+body *{
+	box-sizing: border-box ;
+}
+
+.layout-login {
+    width: 100vw;
+    height: 100vh;
+    background-color: #85054B;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* ESQUERDA */
+.left-layout{
+    width: 40vw;
+    height: 160vh;
+    background-color: #85054B;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-layout > h1{
+    color: #C5679A;
+    font-size: 9vw;
+    width: 40vw;
+    height: 8vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+.left-layout > h2{
+    color: green ;
+    font-style: italic;
+    font-size: 3vw;
+    width: 40vw;
+    height: 4vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.left-layout-image {
+    width: 42vw; 
+    height: 50vh;
+    justify-content: flex-end;
+}
+
+
+/* DIREITA */
+
+.right-login {
+    width: 50vW;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-login {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 60px;
+    background-color:#AA1365;
+    border-radius: 50px;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.337);
+}
+.box-login > h1 {
+    color: #black;
+    font-weight: 850;
+    font-size: 4em;
+    margin-bottom: 20px;
+
+}
+
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin:  -10px 0px;
+}
+
+
+.textfield > input {
+    width: 100%;
+    border: none;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: #D08BB1 ;
+    color: black;
+    font-size: 16pt;
+    box-shadow: 0px 10px 30px #F0AAD0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > input::placeholder {
+    color: #118E16 ;
+
+}
+
+.botao-entrar {
+    width: 100%;
+    padding: 25px 70px ;
+    margin: 25px 0;
+    border: 20px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: 850;
+    letter-spacing: 4px; 
+    color: deeppink;
+    background-color: black;
+    cursor: pointer;
+    box-shadow: 0 10px 40px -12px #F0AAD0;
+    outline: none;
+}
+.botao-entrar:hover{
+    background-color: deeppink
+}
+.primeiro-acesso {
+    color: yellow;
+}
+@media only screen and (max-width: 950px){
+    .box-login{
+        width:85% ;
+    }
+@media only screen and (max-width: 600px){
+    .layout-login{
+        flex-direction:column;
+}
+    .left-layout >h1{
+        display: none;
+    }
+    .left-layout{
+        width: 100%;
+        height: auto;
+    }
+    .right-login{
+        width: 100%;
+        height: auto;
+    }
+    .left-layout-image{
+        width:45vw 
+    }
+.box-login{
+    width:85%
+}
